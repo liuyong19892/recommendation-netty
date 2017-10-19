@@ -1,0 +1,33 @@
+[0m[[0minfo[0m] [0mPackaging /Users/Jay/dev/githubPro/recommendation-system-netty/target/scala-2.11/recommendation_2.11-1.0-sources.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	com/xmtj/netty/log/Logger.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/scala/com/xmtj/netty/log/Logger.scala[0m
+[0m[[0mdebug[0m] [0m	http/RequestParamsParser.java[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/java/http/RequestParamsParser.java[0m
+[0m[[0mdebug[0m] [0m	com/xmtj/netty/utils/Constants.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/scala/com/xmtj/netty/utils/Constants.scala[0m
+[0m[[0mdebug[0m] [0m	com/xmtj/netty/log/LoggerUtils.java[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/scala/com/xmtj/netty/log/LoggerUtils.java[0m
+[0m[[0mdebug[0m] [0m	model/Result.java[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/java/model/Result.java[0m
+[0m[[0mdebug[0m] [0m	com/xmtj/netty/handler/ChildChannelHandler.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/scala/com/xmtj/netty/handler/ChildChannelHandler.scala[0m
+[0m[[0mdebug[0m] [0m	logback.xml[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/resources/logback.xml[0m
+[0m[[0mdebug[0m] [0m	hbaseutill/HbaseClient.java[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/java/hbaseutill/HbaseClient.java[0m
+[0m[[0mdebug[0m] [0m	com/xmtj/netty/utils/RequestAdapter.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/scala/com/xmtj/netty/utils/RequestAdapter.scala[0m
+[0m[[0mdebug[0m] [0m	md5/MD5Utils.java[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/java/md5/MD5Utils.java[0m
+[0m[[0mdebug[0m] [0m	json/JsonUtils.java[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/java/json/JsonUtils.java[0m
+[0m[[0mdebug[0m] [0m	jvmopts[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/resources/jvmopts[0m
+[0m[[0mdebug[0m] [0m	application.conf[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/resources/application.conf[0m
+[0m[[0mdebug[0m] [0m	com/xmtj/netty/NettyServer.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/scala/com/xmtj/netty/NettyServer.scala[0m
+[0m[[0mdebug[0m] [0m	com/xmtj/netty/handler/ServerHandler.scala[0m
+[0m[[0mdebug[0m] [0m	  /Users/Jay/dev/githubPro/recommendation-system-netty/src/main/scala/com/xmtj/netty/handler/ServerHandler.scala[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

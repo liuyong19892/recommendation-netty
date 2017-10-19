@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true">
+	<property name="LOGS_NAME" value="recommendation" />
+	<!--<property file="logback.properties" />-->
+	<property name="LOGS_HOME" value="/services/logs/${LOGS_NAME}/" />
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%date{ISO8601} %-5level %logger %X{akkaSource} %X{sourceThread} - %msg%n</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+
+	<appender name="ROOT_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOGS_HOME}${LOGS_NAME}.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+          <fileNamePattern>${LOGS_HOME}${LOGS_NAME}-%i.log</fileNamePattern>
+          <minIndex>1</minIndex>
+          <maxIndex>10</maxIndex>
+        </rollingPolicy>
+ 
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+          <maxFileSize>100MB</maxFileSize>
+        </triggeringPolicy>
+		<append>true</append>
+		<encoder>
+			<pattern>%date{ISO8601} %-5level %logger %X{akkaSource} %X{sourceThread} - %msg%n</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+
+
+	<appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${LOGS_HOME}error.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+			<fileNamePattern>${LOGS_HOME}error-%i.log</fileNamePattern>
+			<minIndex>1</minIndex>
+			<maxIndex>10</maxIndex>
+		</rollingPolicy>
+
+		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<maxFileSize>100MB</maxFileSize>
+		</triggeringPolicy>
+		<append>true</append>
+		<encoder>
+			<pattern>%date{ISO8601} %-5level %logger %X{akkaSource} %X{sourceThread} - %msg%n</pattern>
+			<charset>UTF-8</charset>
+		</encoder>
+	</appender>
+
+	<root level = "info">
+		<appender-ref ref="ROOT_FILE"/>
+	</root>
+
+	<logger name = "com.xmtj.netty.log.ErrorLogger" level = "debug" additivity="false">
+		<appender-ref ref="ERROR_FILE"/>
+	</logger>
+
+</configuration>

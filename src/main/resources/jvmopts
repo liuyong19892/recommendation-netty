@@ -1,0 +1,24 @@
+-Dlogback.configurationFile=/services/data/mklog/conf/logback.xml
+-J-Xms4g -J-Xmx4g -J-Xmn1100m -J-Xss1m -J-XX:MaxDirectMemorySize=3g
+-J-XX:+UseFastAccessorMethods
+-J-XX:+AggressiveOpts
+-XX:+UseBiasedLocking
+-J-XX:MaxMetaspaceSize=80m -J-XX:MetaspaceSize=80m -J-XX:MaxDirectMemorySize=256m
+-J-XX:InitialCodeCacheSize=40M -J-XX:ReservedCodeCacheSize=50M
+#-J-XX:+UnlockCommercialFeatures -J-XX:+FlightRecorder
+
+-J-XX:+HeapDumpOnOutOfMemoryError
+-J-XX:HeapDumpPath=/services/logs/mklog/engine-dump.hprof
+-J-XX:+PrintGC
+-J-XX:+PrintGCDetails
+-J-XX:+PrintGCTimeStamps
+-J-XX:+PrintGCApplicationConcurrentTime
+-J-XX:+PrintGCApplicationStoppedTime  
+-J-Xloggc:/services/logs/mklog/gc.log
+
+-J-XX:+UseParNewGC
+-J-XX:+UseConcMarkSweepGC
+-J-XX:CMSInitiatingOccupancyFraction=75
+-J-XX:+UseCMSInitiatingOccupancyOnly
+-J-XX:+DisableExplicitGC
+
